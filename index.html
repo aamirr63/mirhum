@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#FFD6E8">
+    <title>Aamir ❤️ Humera — One Year</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* ============ RESET ============ */
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #FFF8F2;
+            color: #5a4a4a;
+            overflow-x: hidden;
+            line-height: 1.6;
+            position: relative;
+        }
+        :root {
+            --baby-pink: #FFD6E8;
+            --lavender: #E0C3FC;
+            --cream: #FFF8F2;
+            --soft-gold: #E8CFA8;
+            --soft-rose: #D98B9C;
+            --deep-rose: #b07a8a;
+        }
+        h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 600; }
+        img { max-width: 100%; display: block; }
+        button { font-family: inherit; }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .floating-bg { position: fixed; inset: 0; pointer-events: none; z-index: 0; overflow: hidden; }
+        .float-item { position: absolute; will-change: transform; animation: floatUp linear infinite; filter: drop-shadow(0 2px 6px rgba(217,139,156,0.3)); }
+        @keyframes floatUp {
+            0% { transform: translateY(105vh) translateX(0) rotate(0deg); opacity: 0; }
+            10% { opacity: 0.7; }
+            50% { transform: translateY(50vh) translateX(20px) rotate(180deg); }
+            90% { opacity: 0.7; }
+            100% { transform: translateY(-10vh) translateX(-20px) rotate(360deg); opacity: 0; }
+        }
+
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            14% { transform: scale(1.18); }
+            28% { transform: scale(1); }
+            42% { transform: scale(1.12); }
+            70% { transform: scale(1); }
+        }
+        @keyframes heartbeatTranslate {
+            0%, 100% { transform: translate(-50%, -50%) scale(1); }
+            14% { transform: translate(-50%, -50%) scale(1.18); }
+            28% { transform: translate(-50%, -50%) scale(1); }
+            42% { transform: translate(-50%, -50%) scale(1.12); }
+            70% { transform: translate(-50%, -50%) scale(1); }
+        }
+        @keyframes fadeUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes popIn {
+            0% { opacity: 0; transform: scale(0.85); }
+            60% { opacity: 1; transform: scale(1.04); }
+            100% { transform: scale(1); }
+        }
+        @keyframes sparkle {
+            0%, 100% { opacity: 0.3; transform: scale(0.8) rotate(0deg); }
+            50% { opacity: 1; transform: scale(1.2) rotate(180deg); }
+        }
+        @keyframes wiggle { 0%, 100% { transform: rotate(-2deg); } 50% { transform: rotate(2deg); } }
+        @keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+        @keyframes bounceSoft { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+        @keyframes pulseGlow {
+            0%, 100% { box-shadow: 0 8px 30px rgba(217,139,156,0.4), 0 0 0 0 rgba(217,139,156,0.4); }
+            50% { box-shadow: 0 8px 35px rgba(217,139,156,0.6), 0 0 0 12px rgba(217,139,156,0); }
+        }
+
+        /* ============ SECTION 1: OPENING ============ */
+        .opening {
+            min-height: 100vh; min-height: 100dvh;
+            display: flex; flex-direction: column;
+            align-items: center; justify-content: center;
+            text-align: center;
+            background: linear-gradient(-45deg, #FFD6E8, #E0C3FC, #FFF8F2, #FFD6E8);
+            background-size: 400% 400%;
+            animation: gradientShift 18s ease infinite;
+            position: relative; z-index: 1;
+            padding: 2rem 1.5rem; overflow: hidden;
+        }
+        .opening::before {
+            content: ''; position: absolute;
+            width: 300px; height: 300px;
+            background: radial-gradient(circle, rgba(255,255,255,0.6), transparent 70%);
+            top: -50px; left: -50px;
+            animation: sparkle 5s ease infinite;
+        }
+        .opening::after {
+            content: ''; position: absolute;
+            width: 250px; height: 250px;
+            background: radial-gradient(circle, rgba(224,195,252,0.5), transparent 70%);
+            bottom: -50px; right: -50px;
+            animation: sparkle 6s ease infinite reverse;
+        }
+        .opening-inner { position: relative; z-index: 2; animation: fadeUp 1.2s ease; }
+        .opening .pre-title {
+            font-family: 'Dancing Script', cursive;
+            font-size: clamp(1rem, 3.5vw, 1.4rem);
+            color: #b07a8a; margin-bottom: 0.5rem; opacity: 0.9;
+        }
+        .opening h1 {
+            font-size: clamp(2.2rem, 8vw, 4.5rem);
+            color: #8a5a6a; margin-bottom: 0.8rem;
+            text-shadow: 0 2px 30px rgba(255,255,255,0.8);
+            line-height: 1.15;
+            animation: fadeUp 1s ease 0.2s both;
+        }
+        .opening h1 .heart { display: inline-block; animation: heartbeat 1.5s ease infinite; font-family: sans-serif; }
+        .opening .sub {
+            font-family: 'Dancing Script', cursive;
+            font-size: clamp(1.2rem, 4.5vw, 2rem);
+            color: #b07a8a; margin-bottom: 0.6rem;
+            animation: fadeUp 1s ease 0.4s both;
+        }
+        .opening .date {
+            font-size: clamp(0.9rem, 3vw, 1.1rem);
+            color: #a08080; letter-spacing: 3px;
+            margin-bottom: 2.5rem; font-weight: 300;
+            animation: fadeUp 1s ease 0.6s both;
+        }
+        .open-btn {
+            background: linear-gradient(135deg, #D98B9C 0%, #E8CFA8 100%);
+            background-size: 200% 200%;
+            color: #fff; border: none;
+            padding: 1.05rem 2.6rem; border-radius: 50px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem; font-weight: 500;
+            cursor: pointer;
+            box-shadow: 0 8px 30px rgba(217,139,156,0.45);
+            transition: transform 0.3s ease;
+            position: relative; z-index: 2;
+            animation: fadeUp 1s ease 0.8s both, pulseGlow 2.5s ease-in-out 1.8s infinite;
+            overflow: hidden;
+        }
+        .open-btn:active { transform: scale(0.96); }
+        .open-btn::before {
+            content: ''; position: absolute; inset: 0;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            background-size: 200% 100%;
+            animation: shimmer 3s infinite;
+        }
+        .sparkle-deco {
+            position: absolute; font-size: 1.5rem;
+            pointer-events: none; z-index: 1;
+            animation: sparkle 3s ease-in-out infinite;
+        }
+
+        /* ============ SECTION 2: WELCOME ============ */
+        .welcome {
+            padding: 5rem 1.5rem; text-align: center;
+            background: #FFF8F2;
+            position: relative; z-index: 1; overflow: hidden;
+        }
+        .welcome::before {
+            content: '🌸'; position: absolute;
+            font-size: 3rem; top: 2rem; left: 8%;
+            opacity: 0.35; animation: wiggle 4s ease infinite;
+        }
+        .welcome::after {
+            content: '💕'; position: absolute;
+            font-size: 2.5rem; bottom: 2rem; right: 8%;
+            opacity: 0.35; animation: wiggle 5s ease infinite reverse;
+        }
+        .welcome h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: clamp(2.2rem, 7vw, 3.5rem);
+            color: #b07a8a; margin-bottom: 1.8rem; position: relative;
+        }
+        .welcome h2::after {
+            content: ''; display: block;
+            width: 80px; height: 2px;
+            background: linear-gradient(90deg, transparent, #E8CFA8, transparent);
+            margin: 1rem auto 0;
+        }
+        .welcome-content {
+            max-width: 640px; margin: 0 auto;
+            font-size: clamp(0.95rem, 2.6vw, 1.08rem);
+            color: #6a5a5a; line-height: 2; font-weight: 300;
+        }
+        .welcome-content p { margin-bottom: 0.9rem; }
+        .welcome-content p:last-child { margin-bottom: 0; }
+        .welcome-title {
+            font-family: 'Dancing Script', cursive;
+            font-size: clamp(1.6rem, 5vw, 2.2rem) !important;
+            color: #b07a8a !important; font-weight: 600;
+            margin-bottom: 0.3rem !important;
+        }
+        .welcome-sub {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem !important; color: #8a5a6a !important;
+            font-style: italic; margin-bottom: 0.5rem !important;
+        }
+        .welcome-tag {
+            font-size: 0.85rem !important; color: #a08080 !important;
+            letter-spacing: 1px; margin-bottom: 1.8rem !important;
+        }
+        .welcome-happy {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.5rem !important; color: #b07a8a !important;
+            margin-top: 1.2rem !important; margin-bottom: 0.5rem !important;
+        }
+        .welcome-sign {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.1rem !important; color: #8a5a6a !important;
+            font-style: italic; margin-bottom: 0.8rem !important;
+        }
+        .welcome-ending { font-size: 0.9rem !important; color: #a08080 !important; font-style: italic; }
+        .welcome-content strong { color: #b07a8a; font-weight: 600; }
+
+        /* ============ SECTION 3: TIMELINE ============ */
+        .timeline-section {
+            padding: 4rem 1.2rem;
+            background: linear-gradient(180deg, #FFF8F2 0%, #FFD6E8 45%, #E0C3FC 75%, #FFF8F2 100%);
+            position: relative; z-index: 1;
+        }
+        .timeline-section > h2 {
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+            font-size: clamp(2.2rem, 7vw, 3.5rem);
+            color: #8a5a6a; margin-bottom: 2.5rem;
+        }
+        .phase-title {
+            text-align: center;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(1.2rem, 3.5vw, 1.7rem);
+            color: #b07a8a; margin: 2.5rem 0 1.5rem;
+            letter-spacing: 1px; font-style: italic;
+        }
+        .timeline { max-width: 640px; margin: 0 auto; position: relative; padding-left: 1.9rem; }
+        .timeline::before {
+            content: ''; position: absolute;
+            left: 0.55rem; top: 0; bottom: 0;
+            width: 2px;
+            background: linear-gradient(180deg, #FFD6E8, #D98B9C, #E0C3FC, #E8CFA8);
+            border-radius: 2px;
+        }
+        .milestone {
+            position: relative; margin-bottom: 1.3rem;
+            padding: 1.1rem 1.3rem;
+            background: rgba(255,255,255,0.75);
+            border-radius: 18px;
+            backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+            cursor: pointer;
+            transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.35s;
+            box-shadow: 0 4px 20px rgba(217,139,156,0.12);
+            border: 1px solid rgba(255,255,255,0.9);
+        }
+        .milestone:active { transform: scale(0.97); }
+        .milestone:hover { transform: translateX(5px); box-shadow: 0 10px 35px rgba(217,139,156,0.28); }
+        .milestone::before {
+            content: '💖'; position: absolute;
+            left: -1.75rem; top: 1.15rem; font-size: 1rem;
+            filter: drop-shadow(0 0 6px rgba(217,139,156,0.6));
+            animation: heartbeat 2s ease infinite;
+        }
+        .milestone .m-date {
+            font-size: 0.72rem; color: #b07a8a;
+            letter-spacing: 1.5px; text-transform: uppercase;
+            margin-bottom: 0.25rem; font-weight: 500;
+        }
+        .milestone .m-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.15rem; color: #6a5a5a; font-weight: 600;
+        }
+        .milestone .m-arrow {
+            position: absolute; right: 1.2rem; top: 50%;
+            transform: translateY(-50%); color: #d4a5b5;
+            font-size: 1.1rem; transition: transform 0.3s;
+        }
+        .milestone:hover .m-arrow { transform: translateY(-50%) translateX(4px); }
+
+        /* ============ MODAL — PHOTO NATURAL SIZE ============ */
+        .modal-overlay {
+            display: none; position: fixed; inset: 0;
+            background: rgba(90,74,74,0.5);
+            backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+            z-index: 1000; align-items: center; justify-content: center;
+            padding: 1.2rem;
+        }
+        .modal-overlay.active { display: flex; animation: fadeIn 0.3s ease; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        .modal-box {
+            background: #FFF8F2; border-radius: 24px;
+            max-width: 520px; width: 100%; overflow: hidden;
+            box-shadow: 0 25px 70px rgba(90,74,74,0.4);
+            animation: popIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+            max-height: 90vh; overflow-y: auto;
+            position: relative; -webkit-overflow-scrolling: touch;
+        }
+        /* ✅ PHOTO NATURAL SIZE — NO CUT */
+        .modal-box img {
+            width: 100%;
+            height: auto;
+            max-height: 70vh;
+            object-fit: contain;
+            display: block;
+            background: #FFF8F2;
+        }
+        .modal-content { padding: 1.6rem 1.8rem 2rem; }
+        .modal-content .m-date {
+            font-size: 0.85rem; color: #b07a8a;
+            letter-spacing: 1.5px; text-transform: uppercase;
+            margin-bottom: 0.5rem; font-weight: 500;
+        }
+        .modal-content h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.7rem; color: #6a5a5a;
+            margin-bottom: 0.9rem; font-weight: 700; line-height: 1.25;
+        }
+        .modal-content p {
+            font-size: 1rem; color: #6a5a5a;
+            line-height: 1.9; font-weight: 400; margin-bottom: 0.9rem;
+        }
+        .modal-content p:last-child { margin-bottom: 0; }
+        .modal-content p strong { color: #b07a8a; font-weight: 600; }
+        .modal-close {
+            position: absolute; top: 0.8rem; right: 0.8rem;
+            background: rgba(255,255,255,0.92);
+            border: none; border-radius: 50%;
+            width: 38px; height: 38px; font-size: 1.05rem; cursor: pointer;
+            color: #8a5a6a; display: flex; align-items: center; justify-content: center;
+            transition: all 0.25s;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1); z-index: 2;
+        }
+        .modal-close:active { transform: scale(0.9) rotate(90deg); background: #FFD6E8; }
+
+        /* ============ SECTION 4: GALLERY — NATURAL SIZE ============ */
+        .gallery-section { padding: 4rem 1rem; background: #FFF8F2; position: relative; z-index: 1; }
+        .gallery-section > h2 {
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+            font-size: clamp(2.2rem, 7vw, 3.5rem);
+            color: #8a5a6a; margin-bottom: 2.5rem;
+        }
+        .masonry { columns: 2; column-gap: 0.7rem; max-width: 900px; margin: 0 auto; }
+        .masonry-item {
+            break-inside: avoid; margin-bottom: 0.7rem;
+            border-radius: 16px; overflow: hidden;
+            position: relative; cursor: pointer;
+            box-shadow: 0 4px 18px rgba(217,139,156,0.18);
+            transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.35s;
+            background: #FFD6E8;
+        }
+        .masonry-item:active { transform: scale(0.96); }
+        /* ✅ PHOTO NATURAL SIZE — NO CUT */
+        .masonry-item img { 
+            width: 100%; 
+            height: auto; 
+            display: block; 
+            transition: transform 0.6s ease; 
+        }
+        .masonry-item .caption {
+            position: absolute; bottom: 0; left: 0; right: 0;
+            padding: 1.5rem 0.8rem 0.7rem;
+            background: linear-gradient(transparent, rgba(90,74,74,0.78));
+            color: #fff; font-size: 0.78rem; font-weight: 300;
+            line-height: 1.3;
+        }
+
+        /* ============ LIGHTBOX ============ */
+        .lightbox {
+            display: none; position: fixed; inset: 0;
+            background: rgba(90,74,74,0.95);
+            backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+            z-index: 2000; align-items: center; justify-content: center;
+            flex-direction: column; padding: 1rem; touch-action: pan-y;
+        }
+        .lightbox.active { display: flex; animation: fadeIn 0.3s ease; }
+        .lightbox img {
+            max-width: 92vw; max-height: 72vh;
+            border-radius: 14px; box-shadow: 0 25px 70px rgba(0,0,0,0.6);
+            animation: popIn 0.35s ease; object-fit: contain;
+        }
+        .lightbox .lb-caption {
+            color: #fff; margin-top: 1rem;
+            font-size: 0.92rem; font-weight: 300;
+            text-align: center; max-width: 90vw;
+        }
+        .lb-btn {
+            position: absolute; top: 50%; transform: translateY(-50%);
+            background: rgba(255,255,255,0.18);
+            border: 1px solid rgba(255,255,255,0.25);
+            color: #fff; width: 46px; height: 46px;
+            border-radius: 50%; font-size: 1.4rem; cursor: pointer;
+            transition: all 0.25s;
+            display: flex; align-items: center; justify-content: center;
+            backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+        }
+        .lb-btn:active { transform: translateY(-50%) scale(0.9); background: rgba(255,255,255,0.35); }
+        .lb-prev { left: 0.8rem; }
+        .lb-next { right: 0.8rem; }
+        .lb-close { top: 1rem; right: 1rem; transform: none; }
+        .lb-close:active { transform: scale(0.9) rotate(90deg); }
+
+        /* ============ SECTION 5: LOVE LETTER ============ */
+        .letter-section {
+            padding: 4rem 1.5rem;
+            background: linear-gradient(180deg, #FFF8F2, #FFD6E8, #E0C3FC, #FFF8F2);
+            text-align: center; position: relative; z-index: 1;
+        }
+        .letter-section h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: clamp(2.2rem, 7vw, 3.5rem);
+            color: #8a5a6a; margin-bottom: 2.5rem;
+        }
+        .envelope-wrapper {
+            perspective: 1200px; max-width: 380px; margin: 0 auto;
+            cursor: pointer; -webkit-tap-highlight-color: transparent;
+        }
+        .envelope {
+            position: relative; width: 100%; padding-bottom: 65%;
+            background: linear-gradient(135deg, #FFD6E8, #E0C3FC);
+            border-radius: 14px;
+            box-shadow: 0 12px 45px rgba(217,139,156,0.35);
+            transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+            transform-style: preserve-3d;
+            animation: bounceSoft 3s ease infinite;
+        }
+        .envelope.open { transform: rotateX(180deg) scale(0.9); opacity: 0; pointer-events: none; animation: none; }
+        .envelope-flap {
+            position: absolute; top: 0; left: 0; right: 0; height: 55%;
+            background: linear-gradient(135deg, #f5c6d8, #d4b0e8);
+            clip-path: polygon(0 0, 50% 100%, 100% 0);
+            border-radius: 14px 14px 0 0;
+            transition: transform 0.6s ease;
+            transform-origin: top;
+            box-shadow: inset 0 -8px 15px rgba(217,139,156,0.15);
+        }
+        .envelope-heart {
+            position: absolute; top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3.2rem; z-index: 2;
+            animation: heartbeatTranslate 1.5s ease infinite;
+            filter: drop-shadow(0 4px 12px rgba(217,139,156,0.5));
+        }
+        .envelope-hint {
+            margin-top: 1.2rem;
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.2rem; color: #b07a8a;
+            animation: bounceSoft 2s ease infinite;
+        }
+        .letter-content {
+            max-width: 520px; margin: 2rem auto 0;
+            background: #fff; border-radius: 22px;
+            padding: 2rem 1.6rem;
+            box-shadow: 0 15px 50px rgba(217,139,156,0.25);
+            display: none; text-align: left;
+            border: 1px solid rgba(255,214,232,0.8);
+            position: relative; overflow: hidden;
+        }
+        .letter-content::before {
+            content: ''; position: absolute;
+            top: 0; left: 0; right: 0; height: 4px;
+            background: linear-gradient(90deg, #FFD6E8, #E0C3FC, #E8CFA8, #D98B9C);
+            background-size: 200% 100%; animation: shimmer 3s infinite;
+        }
+        .letter-content.show { display: block; animation: popIn 0.7s cubic-bezier(0.34, 1.56, 0.64, 1); }
+        .letter-content p {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.08rem; color: #6a5a5a;
+            line-height: 1.9; margin-bottom: 0.9rem;
+        }
+        .letter-content .sign {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.6rem; color: #b07a8a;
+            text-align: right; margin-top: 1rem;
+        }
+        .read-again {
+            margin-top: 1.8rem;
+            background: linear-gradient(135deg, #D98B9C, #E8CFA8);
+            color: #fff; border: none;
+            padding: 0.85rem 2rem; border-radius: 50px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.92rem; font-weight: 500;
+            cursor: pointer;
+            box-shadow: 0 8px 25px rgba(217,139,156,0.4);
+            transition: transform 0.3s;
+            display: none;
+        }
+        .read-again.show { display: inline-block; animation: popIn 0.5s ease; }
+        .read-again:active { transform: scale(0.95); }
+
+        /* ============ SECTION 6: FUTURE ============ */
+        .future-section { padding: 4rem 1.5rem; background: #FFF8F2; text-align: center; position: relative; z-index: 1; }
+        .future-section h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: clamp(2.2rem, 7vw, 3.5rem);
+            color: #8a5a6a; margin-bottom: 0.4rem;
+        }
+        .future-section .subtitle {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.05rem; color: #a08080;
+            font-style: italic; margin-bottom: 2.5rem; padding: 0 1rem;
+        }
+        .dream-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.85rem; max-width: 640px; margin: 0 auto;
+        }
+        .dream-card {
+            background: linear-gradient(135deg, #fff, #FFF8F2);
+            border: 1px solid rgba(255,214,232,0.7);
+            border-radius: 20px; padding: 1.4rem 0.8rem;
+            transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.35s;
+            box-shadow: 0 4px 18px rgba(217,139,156,0.1);
+            cursor: default; position: relative; overflow: hidden;
+        }
+        .dream-card::before {
+            content: ''; position: absolute; inset: 0;
+            background: radial-gradient(circle at 50% 0%, rgba(255,214,232,0.4), transparent 70%);
+            opacity: 0; transition: opacity 0.4s;
+        }
+        .dream-card:hover::before, .dream-card:active::before { opacity: 1; }
+        .dream-card:active { transform: scale(0.96); }
+        .dream-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 40px rgba(217,139,156,0.3);
+            border-color: #D98B9C;
+        }
+        .dream-card .emoji {
+            font-size: 2.2rem; display: block;
+            margin-bottom: 0.5rem;
+            animation: bounceSoft 3s ease infinite;
+        }
+        .dream-card:nth-child(2) .emoji { animation-delay: 0.3s; }
+        .dream-card:nth-child(3) .emoji { animation-delay: 0.6s; }
+        .dream-card:nth-child(4) .emoji { animation-delay: 0.9s; }
+        .dream-card:nth-child(5) .emoji { animation-delay: 1.2s; }
+        .dream-card:nth-child(6) .emoji { animation-delay: 1.5s; }
+        .dream-card .label {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.05rem; color: #6a5a5a; font-weight: 600;
+        }
+
+        /* ============ SECTION 7: SURPRISE ============ */
+        .surprise-section {
+            padding: 4.5rem 1.5rem;
+            background: linear-gradient(180deg, #FFF8F2, #E0C3FC, #FFD6E8, #FFF8F2);
+            text-align: center; position: relative; z-index: 1;
+        }
+        .surprise-title {
+            font-family: 'Dancing Script', cursive;
+            font-size: clamp(2rem, 6vw, 3rem);
+            color: #8a5a6a; margin-bottom: 0.5rem; text-align: center;
+        }
+        .surprise-sub {
+            text-align: center;
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic; color: #a08080;
+            font-size: 1.05rem; margin-bottom: 2rem;
+        }
+        .surprise-btn {
+            background: linear-gradient(135deg, #E0C3FC, #D98B9C);
+            background-size: 200% 200%;
+            color: #fff; border: none;
+            padding: 1.1rem 2.4rem; border-radius: 50px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem; font-weight: 500;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(217,139,156,0.45);
+            transition: transform 0.3s;
+            position: relative; overflow: hidden;
+            animation: pulseGlow 2.5s ease-in-out infinite;
+        }
+        .surprise-btn:active { transform: scale(0.95); }
+        .surprise-reveal {
+            max-width: 480px; margin: 2.5rem auto 0;
+            position: relative; min-height: 440px;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .surprise-envelope {
+            position: absolute; width: 240px; height: 160px;
+            background: linear-gradient(135deg, #FFD6E8, #E0C3FC);
+            border-radius: 14px;
+            box-shadow: 0 12px 45px rgba(217,139,156,0.4);
+            transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+            animation: bounceSoft 3s ease infinite;
+            z-index: 2;
+        }
+        .surprise-envelope.open {
+            transform: rotateX(180deg) scale(0.7);
+            opacity: 0; animation: none;
+        }
+        .surprise-env-flap {
+            position: absolute; top: 0; left: 0; right: 0; height: 55%;
+            background: linear-gradient(135deg, #f5c6d8, #d4b0e8);
+            clip-path: polygon(0 0, 50% 100%, 100% 0);
+            border-radius: 14px 14px 0 0;
+        }
+        .surprise-env-heart {
+            position: absolute; top: 55%; left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2.5rem;
+            animation: heartbeat 1.5s ease infinite;
+            filter: drop-shadow(0 4px 12px rgba(217,139,156,0.5));
+        }
+        .surprise-photo-wrap {
+            background: #fff; border-radius: 22px;
+            padding: 1rem 1rem 1.5rem;
+            box-shadow: 0 20px 55px rgba(217,139,156,0.3);
+            border: 1px solid rgba(255,214,232,0.8);
+            opacity: 0; transform: scale(0.7);
+            transition: all 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
+            pointer-events: none;
+            position: relative; z-index: 1;
+            width: 100%; max-width: 360px;
+        }
+        .surprise-photo-wrap.show {
+            opacity: 1; transform: scale(1); pointer-events: auto;
+        }
+        /* ✅ PHOTO NATURAL SIZE — NO CUT */
+        .surprise-photo-wrap img {
+            width: 100%;
+            height: auto;
+            border-radius: 16px;
+            display: block;
+            margin-bottom: 1.2rem;
+        }
+        .surprise-line1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.1rem; color: #8a5a6a;
+            font-style: italic; text-align: center;
+            margin-bottom: 0.8rem;
+        }
+        .surprise-line2 {
+            font-size: 1rem; color: #6a5a5a;
+            text-align: center; line-height: 1.7;
+            margin-bottom: 0.8rem;
+        }
+        .surprise-line2 strong { color: #b07a8a; font-weight: 600; }
+        .surprise-line3 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.5rem; color: #b07a8a;
+            text-align: center; margin-bottom: 0.3rem;
+        }
+        .surprise-sign {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.3rem; color: #8a5a6a; text-align: center;
+        }
+
+        /* ============ SECTION 8: SONG PLAYER ============ */
+        .song-player { position: fixed; bottom: 1.2rem; right: 1.2rem; z-index: 900; }
+        .song-toggle {
+            width: 58px; height: 58px; border-radius: 50%;
+            background: linear-gradient(135deg, #D98B9C, #E8CFA8);
+            border: none; cursor: pointer; font-size: 1.4rem;
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 8px 28px rgba(217,139,156,0.55);
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            color: #fff;
+            animation: pulseGlow 3s ease-in-out infinite;
+            position: relative;
+        }
+        .song-toggle:active { transform: scale(0.9); }
+        .song-toggle.playing { animation: heartbeat 1.5s ease infinite, pulseGlow 3s ease-in-out infinite; }
+        .song-panel {
+            position: absolute; bottom: 74px; right: 0;
+            width: 290px; background: #fff;
+            border-radius: 20px; padding: 0.9rem;
+            box-shadow: 0 20px 55px rgba(90,74,74,0.35);
+            display: none;
+            border: 1px solid rgba(255,214,232,0.8);
+        }
+        .song-panel.show { display: block; animation: popIn 0.35s cubic-bezier(0.34, 1.56, 0.64, 1); }
+        .song-panel .panel-header {
+            display: flex; justify-content: space-between;
+            align-items: center; margin-bottom: 0.7rem; padding: 0 0.3rem;
+        }
+        .song-panel .panel-header span {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 0.95rem; color: #6a5a5a; font-weight: 600;
+        }
+        .song-panel .panel-close {
+            background: none; border: none; font-size: 1.1rem;
+            cursor: pointer; color: #b07a8a; padding: 4px 8px; border-radius: 8px;
+        }
+        .song-panel .panel-close:active { background: #FFD6E8; }
+        .song-panel iframe {
+            width: 100%; height: 160px;
+            border: none; border-radius: 14px; display: block;
+        }
+
+        /* ============ SECTION 9: FINAL ============ */
+        .final-section {
+            min-height: 100vh; min-height: 100dvh;
+            display: flex; flex-direction: column;
+            align-items: center; justify-content: center;
+            text-align: center;
+            background: linear-gradient(-45deg, #FFD6E8, #E0C3FC, #FFF8F2, #FFD6E8);
+            background-size: 400% 400%;
+            animation: gradientShift 20s ease infinite;
+            padding: 4rem 1.5rem 5rem;
+            position: relative; z-index: 1; overflow: hidden;
+        }
+        .final-section h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: clamp(1.9rem, 7.5vw, 3.8rem);
+            color: #8a5a6a; margin-bottom: 1.8rem;
+            text-shadow: 0 2px 30px rgba(255,255,255,0.7);
+            line-height: 1.2;
+        }
+        .counter-box { margin-bottom: 2rem; }
+        .counter-num {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(4rem, 16vw, 8rem);
+            font-weight: 700;
+            background: linear-gradient(135deg, #D98B9C, #b07a8a, #E8CFA8);
+            -webkit-background-clip: text; background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1;
+            filter: drop-shadow(0 4px 20px rgba(217,139,156,0.4));
+        }
+        .counter-label {
+            font-size: clamp(0.75rem, 2.6vw, 1rem);
+            color: #a08080; letter-spacing: 5px;
+            text-transform: uppercase; margin-top: 0.5rem; font-weight: 400;
+        }
+        .polaroid {
+            background: #fff; padding: 0.9rem 0.9rem 2.2rem;
+            border-radius: 6px;
+            box-shadow: 0 18px 50px rgba(90,74,74,0.28);
+            transform: rotate(-3deg);
+            transition: transform 0.4s;
+            max-width: 260px; margin-bottom: 2rem;
+            animation: bounceSoft 4s ease infinite;
+        }
+        .polaroid:hover, .polaroid:active { transform: rotate(0deg) scale(1.03); }
+        /* ✅ PHOTO NATURAL SIZE */
+        .polaroid img { 
+            width: 100%; 
+            height: auto; 
+            border-radius: 4px; 
+            display: block; 
+        }
+        .polaroid .pol-caption {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.25rem; color: #b07a8a;
+            margin-top: 0.7rem; text-align: center;
+        }
+        .final-msg {
+            max-width: 460px;
+            font-size: clamp(0.9rem, 2.6vw, 1.05rem);
+            color: #6a5a5a; line-height: 1.9; font-weight: 300;
+            margin-bottom: 1.2rem; padding: 0 1rem;
+        }
+        .first-chapter {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem; color: #8a5a6a;
+            font-style: italic; margin-bottom: 0.4rem;
+        }
+        .date-range {
+            font-size: 0.85rem; color: #a08080;
+            letter-spacing: 1.5px; margin-bottom: 1.8rem;
+        }
+        .beating-heart {
+            font-size: 3rem; animation: heartbeat 1.5s ease infinite;
+            display: inline-block; margin-bottom: 1.8rem;
+            filter: drop-shadow(0 6px 20px rgba(217,139,156,0.5));
+        }
+        .final-footer {
+            font-size: 0.82rem; color: #a08080;
+            font-weight: 300; line-height: 2; padding: 0 1rem;
+        }
+        .final-footer .sig {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.15rem; color: #b07a8a;
+            display: block; margin: 0.4rem 0;
+        }
+
+        /* ============ CONFETTI ============ */
+        .confetti-piece {
+            position: fixed; top: -20px; z-index: 800;
+            pointer-events: none;
+            animation: confettiFall linear forwards;
+            will-change: transform;
+        }
+        @keyframes confettiFall {
+            0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(105vh) rotate(720deg); opacity: 0; }
+        }
+
+        /* ============ CURSOR TRAIL ============ */
+        .cursor-heart {
+            position: fixed; pointer-events: none;
+            z-index: 3000; font-size: 0.8rem;
+            animation: cursorFade 0.9s ease forwards;
+        }
+        @keyframes cursorFade {
+            0% { opacity: 0.9; transform: scale(1); }
+            100% { opacity: 0; transform: scale(0.3) translateY(-25px); }
+        }
+
+        /* ============ SCROLL REVEAL ============ */
+        .reveal {
+            opacity: 0; transform: translateY(40px);
+            transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1), transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        @media (min-width: 600px) {
+            .masonry { columns: 3; column-gap: 0.9rem; }
+            .masonry-item { margin-bottom: 0.9rem; }
+            .dream-grid { grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+            .milestone { padding: 1.2rem 1.5rem; }
+            .letter-content { padding: 2.5rem 2rem; }
+        }
+        @media (min-width: 900px) {
+            .dream-card { padding: 1.8rem 1rem; }
+            .dream-card .emoji { font-size: 2.6rem; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="floating-bg" id="floatingBg"></div>
+
+    <!-- ============ SECTION 1: OPENING ============ -->
+    <section class="opening" id="opening">
+        <span class="sparkle-deco" style="top: 15%; left: 12%; animation-delay: 0s;">✨</span>
+        <span class="sparkle-deco" style="top: 22%; right: 15%; animation-delay: 0.7s;">🌸</span>
+        <span class="sparkle-deco" style="bottom: 25%; left: 18%; animation-delay: 1.4s;">💫</span>
+        <span class="sparkle-deco" style="bottom: 18%; right: 12%; animation-delay: 2.1s;">💕</span>
+        <span class="sparkle-deco" style="top: 40%; left: 5%; animation-delay: 1s;">🦋</span>
+        <span class="sparkle-deco" style="top: 55%; right: 6%; animation-delay: 1.8s;">⭐</span>
+
+        <div class="opening-inner">
+            <div class="pre-title">✦ Our Love Story ✦</div>
+            <h1>Mirhum <span class="heart">❤️</span> </h1>
+            <div class="sub">One Year. One Story. Us.</div>
+            <div class="date">24 SEPTEMBER 2026</div>
+            <button class="open-btn" onclick="document.getElementById('welcome').scrollIntoView({behavior:'smooth'})">Open Our Story 💕</button>
+        </div>
+    </section>
+
+    <!-- ============ SECTION 2: WELCOME ============ -->
+    <section class="welcome reveal" id="welcome">
+        <h2>For Humera 💕</h2>
+        <div class="welcome-content">
+            <p class="welcome-title">Welcome to Our Story ❤️</p>
+            <p class="welcome-sub">A Year of Us</p>
+            <p class="welcome-tag">365 Days • Countless Memories • One Beautiful Love Story</p>
+            <p>Hi, my love ❤️</p>
+            <p>I'm <strong>Aamir</strong>, and this is a little piece of our story.</p>
+            <p>Ek saal pehle humari kahani shuru hui thi… aur pata hi nahi chala kab tum meri life ka itna important part ban gayi. 🥹❤️</p>
+            <p>Is website mein hai humare <strong>special moments, beautiful memories, little fights, endless conversations, laughter, and all the love we've shared.</strong> 🫶🏻</p>
+            <p>Ye sirf ek website nahi hai… <strong>ye humare saath bitaye hue ek saal ki chhoti si duniya hai.</strong> ❤️</p>
+            <p class="welcome-happy">Happy 1st Anniversary to Us 🥂❤️</p>
+            <p class="welcome-sign">— With Love, Aamir ❤️</p>
+            <p class="welcome-ending">And this is only the beginning of our story… ✨</p>
+        </div>
+    </section>
+
+    <!-- ============ SECTION 3: TIMELINE ============ -->
+    <section class="timeline-section reveal" id="timeline">
+        <h2>Our Story 🌸</h2>
+
+        <div class="phase-title">Phase 1 · Long Distance 💔➡️❤️</div>
+        <div class="timeline">
+            <div class="milestone" onclick="openModal(0)">
+                <div class="m-date">24 September</div>
+                <div class="m-title">The Beginning ❤️</div>
+                <span class="m-arrow">›</span>
+            </div>
+            <div class="milestone" onclick="openModal(1)">
+                <div class="m-date">Date 1</div>
+                <div class="m-title">Our First Conversation 💬</div>
+                <span class="m-arrow">›</span>
+            </div>
+            <div class="milestone" onclick="openModal(2)">
+                <div class="m-date">Date 2</div>
+                <div class="m-title">Our First Call 📞</div>
+                <span class="m-arrow">›</span>
+            </div>
+            <div class="milestone" onclick="openModal(3)">
+                <div class="m-date">Date 3</div>
+                <div class="m-title">Our First Meeting 🌸</div>
+                <span class="m-arrow">›</span>
+            </div>
+        </div>
+
+        <div class="phase-title">Phase 2 · Together 🏠❤️</div>
+        <div class="timeline">
+            <div class="milestone" onclick="openModal(4)">
+                <div class="m-date">Date 4</div>
+                <div class="m-title">When We Started Living Together 🏠</div>
+                <span class="m-arrow">›</span>
+            </div>
+            <div class="milestone" onclick="openModal(5)">
+                <div class="m-date">Date 5</div>
+                <div class="m-title">Our Favorite Memory ❤️</div>
+                <span class="m-arrow">›</span>
+            </div>
+        </div>
+
+        <div class="phase-title">Phase 3 · Long Distance Again 🌙❤️</div>
+        <div class="timeline">
+            <div class="milestone" onclick="openModal(6)">
+                <div class="m-date">24 September 2026</div>
+                <div class="m-title">Today — 365 Days 💕</div>
+                <span class="m-arrow">›</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ MODAL ============ -->
+    <div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+        <div class="modal-box" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal(event)">✕</button>
+            <img id="modalImg" src="" alt="Memory">
+            <div class="modal-content">
+                <div class="m-date" id="modalDate"></div>
+                <h3 id="modalTitle"></h3>
+                <p id="modalMsg"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ SECTION 4: GALLERY ============ -->
+    <section class="gallery-section reveal" id="gallery">
+        <h2>Our Little Memories 💕</h2>
+        <div class="masonry" id="masonry"></div>
+    </section>
+
+    <!-- ============ LIGHTBOX ============ -->
+    <div class="lightbox" id="lightbox">
+        <button class="lb-btn lb-close" onclick="closeLightbox()">✕</button>
+        <button class="lb-btn lb-prev" onclick="prevLightbox()">‹</button>
+        <img id="lbImg" src="" alt="Memory">
+        <div class="lb-caption" id="lbCaption"></div>
+        <button class="lb-btn lb-next" onclick="nextLightbox()">›</button>
+    </div>
+
+    <!-- ============ SECTION 5: LOVE LETTER ============ -->
+    <section class="letter-section reveal" id="letter">
+        <h2>A Letter For You 💌</h2>
+        <div class="envelope-wrapper" onclick="openEnvelope()">
+            <div class="envelope" id="envelope">
+                <div class="envelope-flap"></div>
+                <div class="envelope-heart">💌</div>
+            </div>
+        </div>
+        <div class="envelope-hint" id="envelopeHint">Tap to open 💕</div>
+        <div class="letter-content" id="letterContent">
+            <p>Hey love,</p>
+            <p>Pata nahi main ye sab words mein kitna achhe se express kar paunga, but ek baat dil se kehna hai — <strong>you are very special to me. ❤️</strong></p>
+            <p>Ek simple se Instagram follow aur mere "Hi" se shuru hui hamari story ko aaj <strong>1 year</strong> ho gaya. 🥹</p>
+            <p>Is ek saal mein humne bahut hasi-mazaak kiya, saath time spend kiya, bahut saari memories banayi aur ek dusre ko aur better jaana.</p>
+            <p>Thank you for being there, for all the little moments, the smiles, the memories and simply for being <strong>you</strong>. 🫶</p>
+            <p><strong>I do not know what the future holds, but I know I want many more beautiful memories with you. ❤️</strong></p>
+            <p>Happy 1st Anniversary, my love.</p>
+            <div class="sign">— Aamir ❤️</div>
+        </div>
+        <button class="read-again" id="readAgain" onclick="resetEnvelope()">Read Again 💕</button>
+    </section>
+
+    <!-- ============ SECTION 6: FUTURE ============ -->
+    <section class="future-section reveal" id="future">
+        <h2>Our Future 🌈</h2>
+        <div class="subtitle">There are still so many beautiful chapters waiting for us.</div>
+        <div class="dream-grid">
+            <div class="dream-card"><span class="emoji">✈️</span><span class="label">More Adventures</span></div>
+            <div class="dream-card"><span class="emoji">😂</span><span class="label">More Laughs</span></div>
+            <div class="dream-card"><span class="emoji">📸</span><span class="label">More Memories</span></div>
+            <div class="dream-card"><span class="emoji">🎉</span><span class="label">More Celebrations</span></div>
+            <div class="dream-card"><span class="emoji">✨</span><span class="label">More Dreams</span></div>
+            <div class="dream-card"><span class="emoji">❤️</span><span class="label">Always More Us</span></div>
+        </div>
+    </section>
+
+    <!-- ============ SECTION 7: SURPRISE (ENHANCED) ============ -->
+    <section class="surprise-section reveal" id="surprise">
+        <h2 class="surprise-title">One Last Surprise 💝</h2>
+        <p class="surprise-sub">I saved something special just for you…</p>
+        
+        <button class="surprise-btn" onclick="showSurprise()" id="surpriseBtn">CLICK FOR SURPRISE 💝</button>
+        
+        <div class="surprise-reveal" id="surpriseReveal">
+            <div class="surprise-envelope" id="surpriseEnvelope">
+                <div class="surprise-env-flap"></div>
+                <div class="surprise-env-heart">💌</div>
+            </div>
+            
+            <div class="surprise-photo-wrap" id="surprisePhoto">
+                <img src="photos/our-photo.jpg" alt="Us" onerror="this.src='https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=600&q=80'">
+                <p class="surprise-line1">Hey… I saved one last thing for you. ❤️</p>
+                <p class="surprise-line2"><strong>### **One Last Thing… ❤️**
+
+365 days with you…
+aur honestly, mujhe nahi pata ye saal itni jaldi kaise beet gaya. 🥹
+
+Tumhare saath bitaya hua har moment mere liye special hai —
+**our first “Hi”, our first meeting, our late-night talks, our silly fights, our laughs… everything. ❤️**
+
+Agar mujhe ye saal dobara jeene ka chance mile,
+**main phir se tumhe hi choose karunga. 🫶**
+
+**Happy 1st Anniversary, My Love ❤️**
+
+**Here’s to us… and all the memories we still have to make. ✨**
+
+— **Aamir ❤️**
+.</strong></p>
+                <p class="surprise-line3">Happy 1st Anniversary ❤️</p>
+                <p class="surprise-sign">— Aamir</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SECTION 8: SONG PLAYER ============ -->
+    <div class="song-player">
+        <div class="song-panel" id="songPanel">
+            <div class="panel-header">
+                <span>🎵 Perfect — Ed Sheeran</span>
+                <button class="panel-close" onclick="closeSong()">✕</button>
+            </div>
+            <iframe id="ytFrame" src="" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <button class="song-toggle" id="songToggle" onclick="toggleSong()" title="Play our song">🎵</button>
+    </div>
+
+    <!-- ============ SECTION 9: FINAL ============ -->
+    <section class="final-section" id="final">
+        <h2>Happy 1st Anniversary, Humera! 💕</h2>
+        <div class="counter-box">
+            <div class="counter-num" id="counterNum">0</div>
+            <div class="counter-label">Days of Us ❤️</div>
+        </div>
+        <div class="polaroid">
+            <img src="photos/our-photo.jpg" alt="Our photo" onerror="this.src='https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=600&q=80'">
+            <div class="pol-caption">Us ❤️</div>
+        </div>
+        <div class="final-msg">Thank you for being the best part of my life. Here's to forever.</div>
+        <div class="first-chapter">Our First Chapter ❤️</div>
+        <div class="date-range">24 September 2025 → 24 September 2026</div>
+        <div class="beating-heart">❤️</div>
+        <div class="final-footer">
+            Made with love
+            <span class="sig">by Aamir ❤️ for Humera</span>
+            24 September 2026
+        </div>
+    </section>
+
+    <script>
+        /* ============ FLOATING BACKGROUND ============ */
+        (function() {
+            const bg = document.getElementById('floatingBg');
+            const emojis = ['❤️', '💕', '✨', '🦋', '💖', '🌸', '💗', '⭐', '💫', '🌷'];
+            const count = window.innerWidth < 600 ? 18 : 28;
+            for (let i = 0; i < count; i++) {
+                const el = document.createElement('div');
+                el.className = 'float-item';
+                el.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+                el.style.left = Math.random() * 100 + '%';
+                el.style.fontSize = (0.7 + Math.random() * 1.4) + 'rem';
+                el.style.animationDuration = (12 + Math.random() * 18) + 's';
+                el.style.animationDelay = (Math.random() * 20) + 's';
+                bg.appendChild(el);
+            }
+        })();
+
+        /* ============ TIMELINE DATA — 7 ALAG PHOTOS ============ */
+        const milestones = [
+            { 
+                date: '24 September 2025', 
+                title: 'The Beginning ❤️', 
+                msg: `Maybe for me, our story started with an <strong>Instagram follow</strong>…<br><br>But for you, it had already started a little earlier. ❤️<br><br>Tum mujhe pehle hi college mein dekh chuki thi.<br>Tum jaanti thi main kaun ho…<br>lekin mujhe bilkul nahi pata tha ki koi mujhe itni quietly notice kar raha hai. 🥹<br><br>Phir ek din tumne mujhe Instagram par follow kiya. ✨<br><br>Maine bas ek simple sa <strong>"Hi"</strong> message kiya…<br>aur shayad mujhe tab bilkul idea nahi tha ki woh chhota sa "Hi" meri life ki sabse beautiful conversations ki beginning banne wala hai. ❤️<br><br>Uske baad baatein shuru hui…<br>baatein badhti gayi…<br>aur dheere-dheere ek unknown si connection, ek beautiful relationship mein badal gayi. 🫶🏻<br><br><strong>Tum mujhe pehle dekh chuki thi…<br>aur mujhe baad mein pata chala ki meri story ka sabse beautiful character tum ho. ❤️</strong><br><br>— <strong>Aamir</strong>`, 
+                img: 'photos/timeline/photo1.jpg' 
+            },
+            { 
+                date: 'Date 1', 
+                title: 'Our First Conversation 💬❤️', 
+                msg: `It all started with just one little word…<br><br><strong>"Hi" ❤️</strong><br><br>Bas ek simple sa message tha,<br>lekin mujhe kya pata tha ki isi <strong>"Hi"</strong> ke baad humari itni beautiful story likhi jayegi. 🥹<br><br>Tum mujhe pehle se jaanti thi,<br>college mein mujhe dekh bhi chuki thi…<br>aur main toh ye bhi nahi jaanta tha ki meri life mein tumhari entry hone wali hai. ❤️<br><br>Phir us "Hi" ke baad baatein hoti gayi…<br>thodi awkward, thodi random,<br>lekin har conversation ke saath hum ek-dusre ke thoda aur close hote gaye. 🫶🏻<br><br>Aaj bhi sochta hoon…<br><br><strong>Agar us din maine "Hi" nahi kaha hota,<br>toh shayad humari story bhi kabhi start nahi hoti. ❤️</strong><br><br>And honestly,<br><strong>I am glad I said Hi. 🥹❤️</strong><br><br>— <strong>Aamir</strong>`, 
+                img: 'photos/timeline/photo2.jpg' 
+            },
+            { 
+                date: 'Date 2', 
+                title: 'Our First Call 📞❤️', 
+                msg: `Pehli call shayad ek normal si call thi,<br>lekin aaj uske baare mein sochta hoon toh lagta hai…<br><br>That was another little step in our story. 🥹❤️<br><br>Mujhe exact date yaad nahi,<br>lekin tumhari awaaz se judi woh feeling aaj bhi special hai.<br><br>Some moments do not need a date to become a memory. ❤️<br><br>— <strong>Aamir</strong>`, 
+                img: 'photos/timeline/photo3.jpg' 
+            },
+            { 
+                date: 'Date 3', 
+                title: 'Our First Meeting 🫶', 
+                msg: `Finally, woh din aa gaya jab hum pehli baar mile. ❤️<br><br>Main Delhi se Noida tumhare PG aaya, tumhe pick kiya aur tumhare liye <strong>flowers</strong> lekar aaya. 🌸<br>Phir hum saath <strong>CP</strong> gaye, KFC mein baithe aur bahut saari baatein ki.<br><br>Pata hi nahi chala time kab beet gaya…<br>Aur phir woh <strong>pehli raat bhi saath</strong> guzari. ❤️<br><br><strong>Pehli mulaqat simple thi, par tumhare saath hone ki wajah se hamesha special rahegi. 🫶</strong><br><br>— <strong>Aamir</strong>`, 
+                img: 'photos/timeline/photo4.jpg' 
+            },
+            { 
+                date: 'Date 4', 
+                title: 'When We Started Living Together 🏠❤️', 
+                msg: `Phir ek time aisa bhi aaya jab humne kaafi time <strong>saath rehna</strong> start kiya. 🫶<br><br>Saath rehkar humne bahut maze kiye, bahut hasi-mazaak kiya aur itni saari memories banayi jo sirf hamari hain. ❤️<br><br>Kabhi random plans, kabhi late-night baatein, kabhi bina kisi reason ke hasi…<br><strong>Har normal sa din bhi tumhare saath special lagta tha. 🥹❤️</strong><br><br>Those days were truly some of my favourite memories with you. 🫶<br><br>— <strong>Aamir</strong>`, 
+                img: 'photos/timeline/photo5.jpg' 
+            },
+            { 
+                date: 'Date 5', 
+                title: 'Our Favorite Memory ❤️', 
+                msg: `Agar mujhse poocha jaaye ki hamari favourite memory kaunsi hai, toh shayad main ek choose hi na kar paun. 🥹<br><br>Tumhare saath bitaya hua <strong>har woh din jab hum saath the, haste the, maze karte the aur bina kisi reason ke khush rehte the</strong> — mere liye wahi favourite memories hain. ❤️<br><br><strong>Because the best memories aren't always about where we were, but about who we were with. 🫶</strong><br><br>— <strong>Aamir</strong>`, 
+                img: 'photos/timeline/photo6.jpg' 
+            },
+            { 
+                date: '24 September 2026', 
+                title: 'Today — 365 Days ❤️', 
+                msg: `<strong>365 days. 12 months. Countless memories. One beautiful us. 🫶</strong><br><br>Ek saal pehle ek simple se <strong>"Hi"</strong> se jo story shuru hui thi, aaj woh meri life ki sabse special story ban chuki hai. ❤️<br><br>In 365 days mein humne hasi, masti, fights, care aur bahut saare beautiful moments share kiye.<br><br><strong>Thank you for being a part of my life. ❤️</strong><br><br>— <strong>Aamir ❤️</strong>`, 
+                img: 'photos/timeline/photo7.jpg' 
+            }
+        ];
+
+        function openModal(i) {
+            const m = milestones[i];
+            document.getElementById('modalImg').src = m.img;
+            document.getElementById('modalDate').textContent = m.date;
+            document.getElementById('modalTitle').textContent = m.title;
+            document.getElementById('modalMsg').innerHTML = m.msg;
+            document.getElementById('modalOverlay').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal(e) {
+            if (e) e.stopPropagation();
+            document.getElementById('modalOverlay').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        /* ============ GALLERY — 12 ALAG PHOTOS ============ */
+        const galleryData = [
+            { img: 'photos/gallery/gallery1.jpg', caption: 'Jahan sab shuru hua 🌸' },
+            { img: 'photos/gallery/gallery2.jpg', caption: 'Wo pehli hasi 😊' },
+            { img: 'photos/gallery/gallery3.jpg', caption: 'Tumhari aankhon mein mera jahaan ✨' },
+            { img: 'photos/gallery/gallery4.jpg', caption: 'Coffee, baatein, aur tum ☕' },
+            { img: 'photos/gallery/gallery5.jpg', caption: 'Late night talks 💕' },
+            { img: 'photos/gallery/gallery6.jpg', caption: 'Hamara pehla adventure ✈️' },
+            { img: 'photos/gallery/gallery7.jpg', caption: 'Wo din jab waqt ruk gaya ⏳' },
+            { img: 'photos/gallery/gallery8.jpg', caption: 'Tumhari muskurahat 😍' },
+            { img: 'photos/gallery/gallery9.jpg', caption: 'Silly selfies, serious pyaar 🤳' },
+            { img: 'photos/gallery/gallery10.jpg', caption: 'Barish, chai, aur tum 🌧️' },
+            { img: 'photos/gallery/gallery11.jpg', caption: 'Mera favourite insaan ❤️' },
+            { img: 'photos/gallery/gallery12.jpg', caption: 'Ye toh bas shuruaat hai ✨' }
+        ];
+
+        (function buildGallery() {
+            const wrap = document.getElementById('masonry');
+            galleryData.forEach((g, i) => {
+                const div = document.createElement('div');
+                div.className = 'masonry-item';
+                div.innerHTML = `<img src="${g.img}" alt="Memory ${i+1}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=600&q=80'"><div class="caption">${g.caption}</div>`;
+                div.onclick = () => openLightbox(i);
+                wrap.appendChild(div);
+            });
+        })();
+
+        /* ============ LIGHTBOX ============ */
+        let lbIndex = 0;
+        function openLightbox(i) {
+            lbIndex = i;
+            updateLightbox();
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function updateLightbox() {
+            const g = galleryData[lbIndex];
+            document.getElementById('lbImg').src = g.img;
+            document.getElementById('lbCaption').textContent = g.caption;
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        function nextLightbox() {
+            lbIndex = (lbIndex + 1) % galleryData.length;
+            updateLightbox();
+        }
+        function prevLightbox() {
+            lbIndex = (lbIndex - 1 + galleryData.length) % galleryData.length;
+            updateLightbox();
+        }
+        document.addEventListener('keydown', (e) => {
+            if (document.getElementById('lightbox').classList.contains('active')) {
+                if (e.key === 'Escape') closeLightbox();
+                if (e.key === 'ArrowRight') nextLightbox();
+                if (e.key === 'ArrowLeft') prevLightbox();
+            }
+            if (document.getElementById('modalOverlay').classList.contains('active')) {
+                if (e.key === 'Escape') closeModal();
+            }
+        });
+
+        /* ============ SWIPE (lightbox) ============ */
+        (function() {
+            let startX = 0;
+            const lb = document.getElementById('lightbox');
+            lb.addEventListener('touchstart', (e) => { startX = e.touches[0].clientX; }, { passive: true });
+            lb.addEventListener('touchend', (e) => {
+                const dx = e.changedTouches[0].clientX - startX;
+                if (Math.abs(dx) > 50) {
+                    if (dx < 0) nextLightbox();
+                    else prevLightbox();
+                }
+            }, { passive: true });
+        })();
+
+        /* ============ ENVELOPE ============ */
+        let envelopeOpened = false;
+        function openEnvelope() {
+            if (envelopeOpened) return;
+            envelopeOpened = true;
+            document.getElementById('envelope').classList.add('open');
+            document.getElementById('envelopeHint').style.display = 'none';
+            setTimeout(() => {
+                document.getElementById('letterContent').classList.add('show');
+                document.getElementById('readAgain').classList.add('show');
+            }, 500);
+        }
+        function resetEnvelope() {
+            envelopeOpened = false;
+            document.getElementById('envelope').classList.remove('open');
+            document.getElementById('letterContent').classList.remove('show');
+            document.getElementById('readAgain').classList.remove('show');
+            document.getElementById('envelopeHint').style.display = '';
+            setTimeout(() => {
+                document.getElementById('envelope').scrollIntoView({behavior:'smooth', block:'center'});
+            }, 100);
+        }
+
+        /* ============ SONG PLAYER ============ */
+        let songOpen = false;
+        const ytSrc = 'https://www.youtube.com/embed/2Vv-BfVoq4g?autoplay=1&enablejsapi=1&rel=0';
+        function toggleSong() {
+            const panel = document.getElementById('songPanel');
+            const frame = document.getElementById('ytFrame');
+            const toggle = document.getElementById('songToggle');
+            if (!songOpen) {
+                frame.src = ytSrc;
+                panel.classList.add('show');
+                toggle.classList.add('playing');
+                toggle.textContent = '❤️';
+                songOpen = true;
+            } else {
+                closeSong();
+            }
+        }
+        function closeSong() {
+            document.getElementById('songPanel').classList.remove('show');
+            document.getElementById('ytFrame').src = '';
+            document.getElementById('songToggle').classList.remove('playing');
+            document.getElementById('songToggle').textContent = '🎵';
+            songOpen = false;
+        }
+
+        /* ============ SURPRISE (ENHANCED) ============ */
+        function showSurprise() {
+            const btn = document.getElementById('surpriseBtn');
+            const envelope = document.getElementById('surpriseEnvelope');
+            const photo = document.getElementById('surprisePhoto');
+            
+            // Button hide
+            btn.style.display = 'none';
+            
+            // Envelope open animation
+            setTimeout(() => {
+                envelope.classList.add('open');
+            }, 100);
+            
+            // Photo + Text reveal
+            setTimeout(() => {
+                envelope.style.display = 'none';
+                photo.classList.add('show');
+            }, 900);
+            
+            // Song auto-play
+            if (!songOpen) {
+                const panel = document.getElementById('songPanel');
+                const frame = document.getElementById('ytFrame');
+                const toggle = document.getElementById('songToggle');
+                
+                frame.src = ytSrc;
+                panel.classList.add('show');
+                toggle.classList.add('playing');
+                toggle.textContent = '❤️';
+                songOpen = true;
+            }
+        }
+
+        /* ============ SCROLL REVEAL ============ */
+        (function() {
+            const reveals = document.querySelectorAll('.reveal');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) {
+                        e.target.classList.add('visible');
+                        observer.unobserve(e.target);
+                    }
+                });
+            }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+            reveals.forEach(r => observer.observe(r));
+        })();
+
+        /* ============ COUNTER + CONFETTI ============ */
+        let counterDone = false;
+        let confettiDone = false;
+        (function() {
+            const finalSection = document.getElementById('final');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(e => {
+                    if (e.isIntersecting && !counterDone) {
+                        counterDone = true;
+                        animateCounter();
+                        if (!confettiDone) { confettiDone = true; startConfetti(); }
+                    }
+                });
+            }, { threshold: 0.25 });
+            observer.observe(finalSection);
+        })();
+
+        function animateCounter() {
+            const el = document.getElementById('counterNum');
+            const target = 365;
+            const duration = 2200;
+            const start = performance.now();
+            function tick(now) {
+                const progress = Math.min((now - start) / duration, 1);
+                const eased = 1 - Math.pow(1 - progress, 3);
+                el.textContent = Math.floor(eased * target);
+                if (progress < 1) requestAnimationFrame(tick);
+                else el.textContent = target;
+            }
+            requestAnimationFrame(tick);
+        }
+
+        function startConfetti() {
+            const colors = ['#FFD6E8', '#E0C3FC', '#E8CFA8', '#D98B9C', '#FFF8F2', '#f5c6d8'];
+            const shapes = ['❤️', '💕', '✨', '🌸', '⭐', '💖', '🎉'];
+            const isMobile = window.innerWidth < 600;
+            const total = isMobile ? 40 : 70;
+            for (let i = 0; i < total; i++) {
+                setTimeout(() => {
+                    const c = document.createElement('div');
+                    c.className = 'confetti-piece';
+                    if (Math.random() > 0.5) {
+                        c.textContent = shapes[Math.floor(Math.random() * shapes.length)];
+                        c.style.fontSize = (0.7 + Math.random() * 1.1) + 'rem';
+                    } else {
+                        const size = 6 + Math.random() * 10;
+                        c.style.width = size + 'px';
+                        c.style.height = size + 'px';
+                        c.style.background = colors[Math.floor(Math.random() * colors.length)];
+                        c.style.borderRadius = Math.random() > 0.5 ? '50%' : '2px';
+                    }
+                    c.style.left = Math.random() * 100 + 'vw';
+                    c.style.animationDuration = (3 + Math.random() * 3) + 's';
+                    document.body.appendChild(c);
+                    setTimeout(() => c.remove(), 6500);
+                }, i * 55);
+            }
+        }
+
+        /* ============ CURSOR TRAIL (desktop) ============ */
+        if (window.matchMedia('(pointer: fine)').matches) {
+            let lastTrail = 0;
+            document.addEventListener('mousemove', (e) => {
+                const now = Date.now();
+                if (now - lastTrail < 90) return;
+                lastTrail = now;
+                const h = document.createElement('div');
+                h.className = 'cursor-heart';
+                h.textContent = Math.random() > 0.6 ? '💕' : '❤️';
+                h.style.left = e.clientX + 'px';
+                h.style.top = e.clientY + 'px';
+                document.body.appendChild(h);
+                setTimeout(() => h.remove(), 900);
+            });
+        }
+
+        /* ============ MOBILE: prevent horizontal scroll ============ */
+        document.addEventListener('scroll', () => {
+            if (window.scrollX !== 0) window.scrollTo(0, window.scrollY);
+        }, { passive: true });
+
+        /* ============ MOBILE: tap-heart burst ============ */
+        document.querySelectorAll('button').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                if (window.innerWidth > 900) return;
+                const rect = this.getBoundingClientRect();
+                for (let i = 0; i < 4; i++) {
+                    const h = document.createElement('div');
+                    h.textContent = ['❤️', '💕', '✨'][i % 3];
+                    h.style.position = 'fixed';
+                    h.style.left = (rect.left + rect.width / 2) + 'px';
+                    h.style.top = (rect.top + rect.height / 2) + 'px';
+                    h.style.pointerEvents = 'none';
+                    h.style.zIndex = 3000;
+                    h.style.fontSize = '1rem';
+                    h.style.transition = 'all 0.7s ease-out';
+                    h.style.opacity = '1';
+                    document.body.appendChild(h);
+                    requestAnimationFrame(() => {
+                        h.style.transform = `translate(${(Math.random() - 0.5) * 100}px, ${-60 - Math.random() * 60}px) scale(0.3)`;
+                        h.style.opacity = '0';
+                    });
+                    setTimeout(() => h.remove(), 750);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
